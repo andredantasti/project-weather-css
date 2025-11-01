@@ -1,0 +1,115 @@
+@media (max-width: 390px) {
+    
+    .container{
+    display: grid;
+    grid-template-areas: "header"
+                         "city "
+                         "hours "
+                         "dados"
+                         "days";
+
+    height: 100vh;
+    width: 390px;
+    gap: 20px;
+   
+
+}
+
+.header{
+    width: 390px;
+    flex-direction: column;
+}
+
+.container > .hours{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container > .dados{
+    margin: 0 auto;
+}
+
+.city{
+    width: 95%;
+    margin-top: 0;
+    margin-left: 20px;
+    height: 90%;
+}
+
+.city > div{
+    width: 50%;
+    
+}
+
+.previsao{
+    margin-left: 10px;
+}
+
+.city > .previsao > h1{
+    font-size: 1.8rem;
+}
+
+.city > .previsao > p{
+    font-size: 1rem;
+}
+
+.city > div > h2{
+    font-size: 2.8rem ;
+}
+
+.city > div > img{
+    width: 163px;
+}
+
+.hours{
+    width: 354px;
+    height: 178px;
+    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 25px;
+}
+
+.hours .time{
+    margin-left: 15px;
+}
+
+.time > #time-hours{
+    font-size: 12px;
+
+}
+
+#graus{
+    font-size: 20px;
+}
+
+.hours > .time > img{
+    width: 35px;
+    margin: 10px;
+}
+
+.dados{
+    width: 355px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.indice{
+    width: 170px;
+    height: 128px;
+    border-radius: 18px;
+
+}
+
+.days{
+    width: 80%;
+    margin: 45px;
+    margin-top: 110px;
+}
+
+
+
+}

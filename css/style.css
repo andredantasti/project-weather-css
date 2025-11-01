@@ -1,0 +1,229 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 226, 226);
+    height: 120vh;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "header header ."
+                         "city city  days"
+                         "hours hours  days"
+                         "dados dados  days";
+
+    height: 100vh;
+    
+}
+
+.container > .dados{
+    align-self: flex-end;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    font-family: 'Chillax', sans-serif;
+    color: #007DFE;
+    margin-top: 30px;
+    font-size: 1.8rem;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+
+
+.header > img{
+    width: 43px;
+    height: 24px;
+}
+
+.previsao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    
+}
+
+.previsao > h2{
+    margin-top: 8%;
+}
+
+.icon-grande{
+    justify-content: center;
+    align-items: center;
+}
+
+#search{
+    width: 70%;
+    height: 55px;
+    border-radius: 16px;
+    border: none;
+    background-image: url(/images/search.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    padding-left: 45px;
+}
+
+#search:focus{
+    outline: 2px solid #3AA2FF;
+}
+
+#search::placeholder{
+    color: #b1b8c0;
+}
+
+.city{
+    grid-area: city;
+    display: flex;
+    width: 100%;
+    height: 261px;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.city > div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    
+}
+
+.city > div > h2{
+    font-size: 3.5rem;
+}
+
+.city > div > img{
+    width: 242px;
+}
+
+.hours{
+    grid-area: hours;
+    display: flex;
+    width: 910px;
+    height: 261px;
+    justify-content: space-around;
+    background: linear-gradient(to right, #007DFE, #3AA2FF);
+    border-radius: 40px;
+    padding: 30px;
+    align-items: center;
+    color: white;
+}
+
+.hours{
+    filter: drop-shadow(10px 10px 15px rgba(1, 126, 254, 0.5));
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cloud > img{
+    margin: 20px;
+}
+
+.moon > img{
+    margin: 10px;
+}
+
+.dados{
+    grid-area: dados;
+    width: 100%;
+    height: 167px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.indice{
+    width: 23%;
+    height: 100%;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: center;
+}
+
+
+.indice > p{
+    display: flex;
+    align-items: center;
+    
+}
+
+.days{
+    grid-area: days;
+    width: 397px;
+    height: 827px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 40px;
+    margin-left: 6rem;
+    
+}
+
+.dias{
+    width: 258px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+span{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+#icon-temp{
+    width: 17%;
+    margin-right: 5px;
+}
+
+#icon-rain{
+    width: 25%;
+    margin-right: 5px;
+}
+
+#icon-vento{
+    width: 35%;
+    margin-right: 5px;
+}
+
+#icon-uv{
+    width: 55%;
+    margin-right: 5px;
+}
+
+.text-color-gray{
+    color: var(--text-color-gray);
+}
+
+#time-hours{
+    font-weight: 300;
+    font-size: 18px;
+
+}
+
+#graus{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.text-gradient{
+     background: linear-gradient(90deg, #007DFE, #3AA2FF);
+  -webkit-background-clip: text; /* recorta o background no formato do texto */
+  -webkit-text-fill-color: transparent; 
+}

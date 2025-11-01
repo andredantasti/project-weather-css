@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto - Previsão do Tempo</title>
+
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <section class="header">
+        <img src="images/logo.png" alt="Logomarca" />
+        <h4 class="text-gradient">Clima Hoje</h4>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Procure por cidades"
+        />
+      </section>
+
+      <section class="city">
+        <div class="previsao">
+          <h1>São Paulo</h1>
+          <p class="text-color-gray">Chance de chuva: 0%</p>
+          <h2>28º</h2>
+        </div>
+
+        <div class="icon-grande">
+          <img src="images/sunclouds.svg" alt="Imagem Sol" />
+        </div>
+      </section>
+
+      <section class="hours">
+        <div class="time one">
+          <p id="time-hours">06:00 AM</p>
+          <img src="images/suncloudmenor.svg" alt="Sol e Nuvem" />
+          <p id="graus">24º</p>
+        </div>
+        <div class="time">
+          <p id="time-hours">09:00 AM</p>
+          <img src="images/sunclouds.png" alt="Sol e Nuvem" />
+          <p id="graus">28º</p>
+        </div>
+        <div class="time">
+          <p id="time-hours">12:00 PM</p>
+          <img src="images/sun.svg" alt="Sol e Nuvem" />
+          <p id="graus">30º</p>
+        </div>
+        <div class="time">
+          <p id="time-hours">03:00 PM</p>
+          <img src="images/sun.svg" alt="Sol e Nuvem" />
+          <p id="graus">32º</p>
+        </div>
+        <div class="time cloud">
+          <p id="time-hours">06:00 PM</p>
+          <img src="images/clouds.svg" alt="Sol e Nuvem" />
+          <p id="graus">27º</p>
+        </div>
+        <div class="time moon">
+          <p id="time-hours">09:00PM</p>
+          <img src="images/moonclouds.svg" alt="Sol e Nuvem" />
+          <p id="graus">26º</p>
+        </div>
+      </section>
+
+      <section class="dados">
+        <div class="indice">
+          <p class="text-color-gray">Sensação Térmica</p>
+          <p>
+            <img src="images/icon-temp.svg" alt="Temperatura" id="icon-temp" />
+            <span>30º</span>
+          </p>
+        </div>
+        <div class="indice">
+          <p class="text-color-gray">Chance de Chuva</p>
+          <p>
+            <img src="images/icon-water.svg" alt="Água" id="icon-rain" /><span
+              >0%</span
+            >
+          </p>
+        </div>
+        <div class="indice">
+          <p class="text-color-gray">Vento</p>
+          <p>
+            <img src="images/icon-vento.svg" alt="Vento" id="icon-vento" /><span
+              >2</span
+            >km/h
+          </p>
+        </div>
+        <div class="indice">
+          <p class="text-color-gray">Índice UV</p>
+          <p>
+            <img src="images/icon-sun.svg" alt="Sol" id="icon-uv" /><span
+              >4</span
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="days">
+        <div class="dias">
+          <p class="text-color-gray">Segunda</p>
+          <img src="images/suncloudmenor.svg" alt="Sol e Nuvem" />
+          <p>29º</p>
+          <p class="text-color-gray">23</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Terça</p>
+          <img src="images/sun.svg" alt="Sol" />
+          <p>33º</p>
+          <p class="text-color-gray">27</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Quarta</p>
+          <img src="images/sun.svg" alt="Sol" />
+          <p>32º</p>
+          <p class="text-color-gray">26</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Quinta</p>
+          <img src="images/sunclouds.png" alt="Sol e Nuvem" />
+          <p>30º</p>
+          <p class="text-color-gray">24</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Sexta</p>
+          <img src="images/clouds.svg" alt="Nuvem" />
+          <p>28º</p>
+          <p class="text-color-gray">22</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Sábado</p>
+          <img src="images/rain.svg" alt="Chuva" />
+          <p>26º</p>
+          <p class="text-color-gray">20</p>
+        </div>
+        <div class="dias">
+          <p class="text-color-gray">Domingo</p>
+          <img src="images/sunclouds.png" alt="Sol e Menos nuvem" />
+          <p>30º</p>
+          <p class="text-color-gray">25</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

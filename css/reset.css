@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@font-face {
+    font-family: "Chillax";
+    src: url(/assets/fonts/Chillax-Semibold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --text-color-gray: #8f8f8f;
+}
